@@ -68,28 +68,4 @@ public class MapFragment extends Fragment implements OnMapReadyCallback
             crearMarcador(UBICACION_ALTERNATIVA, "¡Otro movimiento brusco!", BitmapDescriptorFactory.HUE_RED);
         }
     }
-    public void actualizarMarcadorPorMovimiento(String tipoMovimiento) {
-        if (marcador == null) return;
-
-        float color;
-        String titulo;
-
-        switch (tipoMovimiento) {
-            case "Brusco":
-                color = BitmapDescriptorFactory.HUE_RED;
-                titulo = "¡Brusco!";
-                break;
-            case "Moderado":
-                color = BitmapDescriptorFactory.HUE_ORANGE;
-                titulo = "Moderado";
-                break;
-            default:
-                color = BitmapDescriptorFactory.HUE_GREEN;
-                titulo = "Estable";
-                break;
-        }
-
-        LatLng posicionActual = marcador.getPosition();
-        crearMarcador(posicionActual, titulo, color);
-    }
 }
