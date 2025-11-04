@@ -18,7 +18,7 @@
             android:id="@+id/sensor_fragment"
             android:name="com.example.ep_francoavaro_4_11_2025_u3.SensorFragment"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="380dp"
             android:layout_weight="1" />
 
         <fragment
